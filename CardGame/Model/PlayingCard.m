@@ -63,7 +63,7 @@ static const int MATCH_RANK_SCORE = 4;
 
 - (void)setRank:(NSUInteger)rank
 {
-    if (rank < [PlayingCard maxRank]) {
+    if (rank <= [PlayingCard maxRank]) {
         _rank = rank;
     }
 }
